@@ -29,7 +29,6 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "5%",
   },
   video: {
-    width: "50%",
     textAlign: "center",
     display: "block",
     marginLeft: "auto",
@@ -175,15 +174,10 @@ export default function ModalProjectVCT({ devPro }) {
           <img src="./assets/node.png" alt="logo" width="80"  height="100%" style={{marginRight: "10px"}} />
           <img src="./assets/Expressjs.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}} />
           </div>
-            <video
-              controls
-              autoplay="auto"
-              id="idvideo"
-              className={classes.video}
-            >
-              <source src="./assets/vct.mov" type="video/mp4" />
-              <p> Votre vidéo ne prend pas en charge les vidéos HTML5 </p>
-            </video>
+          <div>
+          <iframe className={classes.video} width="869" height="422" src="https://www.youtube.com/embed/2pUNrs7moAk?amp;autoplay=1" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
           </div>
 
           <p className={classes.date2}>

@@ -29,7 +29,6 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "5%",
   },
   video: {
-    width: "50%",
     textAlign: "center",
     display: "block",
     marginLeft: "auto",
@@ -175,15 +174,7 @@ export default function ModalProjectVCT({ devPro }) {
           <img src="./assets/html-2.png" alt="logo" width="40" height="100%" style={{marginRight: "10px"}} />
           <img src="./assets/github.png" alt="logo" width="40"  height="100%" style={{marginRight: "10px"}} />
           </div>
-            <video
-              controls
-              autoplay="auto"
-              id="idvideo"
-              className={classes.video}
-            >
-              <source src="./assets/GUINGUETTE.mov" type="video/mp4" />
-              <p> Votre vidéo ne prend pas en charge les vidéos HTML5 </p>
-            </video>
+          <iframe width="869" height="456" src="https://www.youtube.com/embed/3JS-q55xBUY?amp;autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
           <p className={classes.date2}>
