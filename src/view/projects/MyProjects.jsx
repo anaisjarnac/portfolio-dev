@@ -245,7 +245,7 @@ function MyProjets(props) {
             <hr className={classes.hr}></hr>
             <p className={classes.cat}>Développement Web</p>
           </div>
-          <p className={classes.cat2}>Projet sur la guinguette d'alriq</p>
+          <p className={classes.cat2}>Projet de single page pour une enseigne de restauration, la guinguette chez alric.</p>
           <img
             src="./assets/logo.png"
             alt="alriq"
