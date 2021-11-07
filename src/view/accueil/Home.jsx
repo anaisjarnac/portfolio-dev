@@ -32,9 +32,13 @@ const useStyles = makeStyles(() => ({
     width: "100%",
     height: "100%",
     backgroundRepeat: "no-repeat",
-    backgroundSize: "100%",
-    backgroundPosition: "center",
-    backgroundAttachment: "fixed"
+    backgroundSize: "cover",
+    // backgroundPosition: "center",
+    // backgroundAttachment: "fixed",
+    top: 0,
+    left: 0,
+    minWidth: "100%",
+    minHeight: "100%"
   },
   button: {
     marginTop: "20px", 
@@ -50,36 +54,36 @@ const useStyles = makeStyles(() => ({
   logo1: {
     margin: "10px",
     color: "#FE8B46",
-    marginBottom: "50px",
+    marginBottom: "80px",
   },
   logo2: {
     margin: "10px",
     color: "#9BC7BA",
-    marginBottom: "50px",
+    marginBottom: "80px",
 
   },
   logo6: {
     margin: "10px",
     color: "#9BC7BA",
-    marginBottom: "50px",
+    marginBottom: "80px",
 
   },
   logo3: {
     margin: "10px",
     color: "#E1D05C",
-    marginBottom: "50px",
+    marginBottom: "80px",
 
   },
   logo5: {
     margin: "10px",
     color: "#FE8B46",
-    marginBottom: "50px",
+    marginBottom: "80px",
 
   },
   logo4: {
     margin: "10px",
     color: "#E1D05C",
-    marginBottom: "50px",
+    marginBottom: "80px",
 
   },
   buttons: {
