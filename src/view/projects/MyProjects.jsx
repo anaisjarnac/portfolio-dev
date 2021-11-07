@@ -70,9 +70,11 @@ const useStyles = makeStyles((theme) => ({
   cat2: {
     fontFamily: "Poppins, sans-serif",
     fontSize: "10px",
-    textAlign: "center",
+    textAlign: "justify",
     color: "#CF7C83",
     marginTop: "20px",
+    marginLeft: "10%",
+    marginRight: "10%",
   },
 
   list: {
@@ -225,13 +227,13 @@ function MyProjets(props) {
             <hr className={classes.hr}></hr>
             <p className={classes.cat}>Développement Web</p>
           </div>
-          <p className={classes.cat2}>Deliveroo on Mars</p>
+          <p className={classes.cat2}><strong>"Deliveroo on Mars"</strong> est une application de <strong>service de livraison</strong> de boissons et snacks <strong>intergalactique.</strong></p>
           <img
             src="./assets/sos.jpeg"
             alt="sos"
             className={classes.avatar}
             width="130px"
-            style={{ marginLeft: "28%", marginTop: "30px" }}
+            style={{ marginLeft: "28%", marginTop: "15px" }}
           />
           <ModalProjectSOS className={classes.modal} />
         </Card>
