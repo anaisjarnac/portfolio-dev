@@ -10,7 +10,7 @@ import LocalPhoneIcon from '@material-ui/icons/LocalPhone';
 import EmailIcon from '@material-ui/icons/Email';
 import "./Home.css";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   title: {
     display: 'flex',
     justifyContent: 'center',
@@ -30,15 +30,10 @@ const useStyles = makeStyles(() => ({
   homesweet: {
     backgroundImage: "url('/assets/template-2-2.png')" ,
     width: "100%",
-    height: "100%",
+    height: "100vh",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    // backgroundPosition: "center",
-    // backgroundAttachment: "fixed",
-    top: 0,
-    left: 0,
-    minWidth: "100%",
-    minHeight: "100%"
+    backgroundPosition: "center",
   },
   button: {
     marginTop: "20px", 

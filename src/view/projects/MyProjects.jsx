@@ -223,7 +223,7 @@ function MyProjets(props) {
         <Tilt>
         <Card className={classes.root}>
           <div>
-            <h1 className={classes.title2}>SOS APEROBOT</h1>
+            <h1 className={classes.title2}>SOS APÉROBOT</h1>
             <hr className={classes.hr}></hr>
             <p className={classes.cat}>Développement Web</p>
           </div>
