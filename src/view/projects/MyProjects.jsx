@@ -70,11 +70,9 @@ const useStyles = makeStyles((theme) => ({
   cat2: {
     fontFamily: "Poppins, sans-serif",
     fontSize: "10px",
-    textAlign: "justify",
+    textAlign: "center",
     color: "#CF7C83",
     marginTop: "20px",
-    marginLeft: "10%",
-    marginRight: "10%",
   },
 
   list: {
@@ -89,12 +87,21 @@ const useStyles = makeStyles((theme) => ({
     // backgroundColor: "black",
   },
   grid: {
-    marginTop: "30px",
-    display: "grid",
-    gridTemplateColumns: "300px 300px 300px",
-    gridTemplateRows: "400px 400px",
-    gridGap: "60px",
-    justifyContent: "center",
+    marginTop: "50px",
+  //   display: "grid",
+  //   gridTemplateColumns: "300px 300px 300px",
+  //   gridTemplateRows: "400px 400px",
+  //   gridGap: "60px",
+  //   justifyContent: "center",
+  maxWidth: "1000px",
+  width: "80%",
+  height: "auto",
+  margin: "30px auto",
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fill, 300px)",
+  justifyContent: "center",
+  gridGap: "40px",
+  marginBottom: "80px" 
   },
 
   back: {
@@ -223,17 +230,17 @@ function MyProjets(props) {
         <Tilt>
         <Card className={classes.root}>
           <div>
-            <h1 className={classes.title2}>SOS APÉROBOT</h1>
+            <h1 className={classes.title2}>SOS APEROBOT</h1>
             <hr className={classes.hr}></hr>
             <p className={classes.cat}>Développement Web</p>
           </div>
-          <p className={classes.cat2}><strong>"Deliveroo on Mars"</strong> est une application de <strong>service de livraison</strong> de boissons et snacks <strong>intergalactique.</strong></p>
+          <p className={classes.cat2}>Deliveroo on Mars</p>
           <img
             src="./assets/sos.jpeg"
             alt="sos"
             className={classes.avatar}
             width="130px"
-            style={{ marginLeft: "28%", marginTop: "15px" }}
+            style={{ marginLeft: "28%", marginTop: "30px" }}
           />
           <ModalProjectSOS className={classes.modal} />
         </Card>
@@ -245,7 +252,7 @@ function MyProjets(props) {
             <hr className={classes.hr}></hr>
             <p className={classes.cat}>Développement Web</p>
           </div>
-          <p className={classes.cat2}>Projet de single page pour une enseigne de restauration, la guinguette chez alric.</p>
+          <p className={classes.cat2}>Projet sur la guinguette d'alriq</p>
           <img
             src="./assets/logo.png"
             alt="alriq"
