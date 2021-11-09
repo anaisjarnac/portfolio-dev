@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   alriq: {
-    width: "30%",
+    width: "60%",
     textAlign: "center",
     display: "block",
     marginLeft: "auto",

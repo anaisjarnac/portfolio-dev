@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   alriq: {
-    width: "30%",
+    width: "80%",
     textAlign: "center",
     display: "block",
     marginLeft: "auto",
@@ -125,7 +125,26 @@ const useStyles = makeStyles((theme) => ({
 
     // backgroundColor: "black",
   },
-
+    grid: {
+    marginTop: "50px",
+  //   display: "grid",
+  //   gridTemplateColumns: "300px 300px 300px",
+  //   gridTemplateRows: "400px 400px",
+  //   gridGap: "60px",
+  //   justifyContent: "center",
+  maxWidth: "1000px",
+  width: "80%",
+  height: "auto",
+  margin: "30px auto",
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fill, 300px)",
+  justifyContent: "center",
+  gridGap: "40px",
+  marginBottom: "80px" 
+  },
+img: {
+    width: "80%",
+  },
   js: {
     "@media (max-width: 768px)":{
       width: "30px"
@@ -198,6 +217,14 @@ export default function ModalProjectVCT({ devPro }) {
           <p className={classes.date2}>
           Création de packaging pour une marque de café Française et Biologique.
           </p>
+          <div className={classes.grid}>
+          <img src="./assets/cafe.jpg" alt="" className={classes.img} />
+          <img src="./assets/cafe1.jpg" alt="" className={classes.img} />
+          <img src="./assets/cafe2.jpg" alt="" className={classes.img} />
+          <img src="./assets/cafe3.jpg" alt="" className={classes.img} />
+          <img src="./assets/cafe4.jpg" alt="" className={classes.img} />
+          <img src="./assets/cafe5.jpg" alt="" className={classes.img} />
+          </div>
         </div>
       </Dialog>
     </div>
