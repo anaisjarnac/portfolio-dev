@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "auto",
     boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px;",
     "@media (max-width: 768px)":{
-      width:"434px"
+      width:"380px"
     }
   },
   button: {
