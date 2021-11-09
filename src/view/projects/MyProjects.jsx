@@ -8,15 +8,15 @@ import ModalProjectTOCTOC from "./components/ModalProjectTOCTOC";
 import ModalProjectSOS from "./components/ModalProjectSOS";
 import ModalProjectGG from "./components/ModalProjectGG";
 import ModalProjecttdc from "./components/ModalProjecttdc";
-import Tilt from 'react-parallax-tilt';
+// import Tilt from 'react-parallax-tilt';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 400,
     height: 430,
-    // boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
     boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
   },
+
   media: {
     height: 0,
     paddingTop: "56.25%", // 16:9
@@ -124,6 +124,7 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       backgroundColor: "#B79819",
       color: "white",
+      
     },
   },
   button2: {
@@ -170,7 +171,7 @@ function MyProjets(props) {
         Développement Web {showAll ? "" : "& DESIGN"}
       </Button> */}
       <div className={classes.grid}>
-      <Tilt>
+      {/* <Tilt> */}
         <Card className={classes.root}>
           <div>
             <h1 className={classes.title2}>CARGO BIKE TRADE</h1>
@@ -189,8 +190,8 @@ function MyProjets(props) {
           </div>
           <ModalProjectVCT className={classes.modal} />
         </Card>
-        </Tilt>
-        <Tilt>
+        {/* </Tilt> */}
+        {/* <Tilt> */}
         <Card className={classes.root}>
           <div>
             <h1 className={classes.title2}>TOC TOC</h1>
@@ -209,8 +210,8 @@ function MyProjets(props) {
           />
           <ModalProjectTOCTOC className={classes.modal} />
         </Card>
-        </Tilt>
-        <Tilt>
+        {/* </Tilt> */}
+        {/* <Tilt> */}
         <Card className={classes.root}>
           <div>
             <h1 className={classes.title2}>FIVERR MEET</h1>
@@ -229,8 +230,8 @@ function MyProjets(props) {
           />
           <ModalProject className={classes.modal} />
         </Card>
-        </Tilt> 
-        <Tilt>
+        {/* </Tilt>  */}
+        {/* <Tilt> */}
         <Card className={classes.root}>
           <div>
             <h1 className={classes.title2}>SOS APÉROBOT</h1>
@@ -247,8 +248,8 @@ function MyProjets(props) {
           />
           <ModalProjectSOS className={classes.modal} />
         </Card>
-        </Tilt>
-        <Tilt>
+        {/* </Tilt> */}
+        {/* <Tilt> */}
         <Card className={classes.root}>
           <div>
             <h1 className={classes.title2}>LA GUINGUETTE</h1>
@@ -265,8 +266,8 @@ function MyProjets(props) {
           />
           <ModalProjectGG className={classes.modal} />
         </Card>
-        </Tilt>
-        <Tilt>
+        {/* </Tilt> */}
+        {/* <Tilt> */}
         <Card className={classes.root}>
           <div>
             <h1 className={classes.title2}>LE TEMPS DES CERISES</h1>
@@ -283,7 +284,7 @@ function MyProjets(props) {
           />
           <ModalProjecttdc className={classes.modal} />
         </Card>
-        </Tilt>
+        {/* </Tilt> */}
         <br />
         <br />
         <br />
