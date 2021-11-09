@@ -8,14 +8,16 @@ import ModalProjectTOCTOC from "./components/ModalProjectTOCTOC";
 import ModalProjectSOS from "./components/ModalProjectSOS";
 import ModalProjectGG from "./components/ModalProjectGG";
 import ModalProjecttdc from "./components/ModalProjecttdc";
+import "./MyProjects.css";
 // import Tilt from 'react-parallax-tilt';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  shake: {
     maxWidth: 400,
     height: 430,
-    boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
-  },
+    boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px", 
+    },
+
 
   media: {
     height: 0,
@@ -172,7 +174,7 @@ function MyProjets(props) {
       </Button> */}
       <div className={classes.grid}>
       {/* <Tilt> */}
-        <Card className={classes.root}>
+        <Card className={classes.shake} id="shake">
           <div>
             <h1 className={classes.title2}>CARGO BIKE TRADE</h1>
             <hr className={classes.hr}></hr>
@@ -192,7 +194,7 @@ function MyProjets(props) {
         </Card>
         {/* </Tilt> */}
         {/* <Tilt> */}
-        <Card className={classes.root}>
+        <Card className={classes.shake} id="shake">
           <div>
             <h1 className={classes.title2}>TOC TOC</h1>
             <hr className={classes.hr}></hr>
@@ -212,7 +214,7 @@ function MyProjets(props) {
         </Card>
         {/* </Tilt> */}
         {/* <Tilt> */}
-        <Card className={classes.root}>
+        <Card className={classes.shake} id="shake">
           <div>
             <h1 className={classes.title2}>FIVERR MEET</h1>
             <hr className={classes.hr}></hr>
@@ -232,7 +234,7 @@ function MyProjets(props) {
         </Card>
         {/* </Tilt>  */}
         {/* <Tilt> */}
-        <Card className={classes.root}>
+        <Card className={classes.shake} id="shake">
           <div>
             <h1 className={classes.title2}>SOS APÉROBOT</h1>
             <hr className={classes.hr}></hr>
@@ -250,7 +252,7 @@ function MyProjets(props) {
         </Card>
         {/* </Tilt> */}
         {/* <Tilt> */}
-        <Card className={classes.root}>
+        <Card className={classes.shake} id="shake">
           <div>
             <h1 className={classes.title2}>LA GUINGUETTE</h1>
             <hr className={classes.hr}></hr>
@@ -268,7 +270,7 @@ function MyProjets(props) {
         </Card>
         {/* </Tilt> */}
         {/* <Tilt> */}
-        <Card className={classes.root}>
+        <Card className={classes.shake} id="shake">
           <div>
             <h1 className={classes.title2}>LE TEMPS DES CERISES</h1>
             <hr className={classes.hr}></hr>
