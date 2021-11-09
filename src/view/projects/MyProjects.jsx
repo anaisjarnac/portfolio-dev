@@ -38,6 +38,9 @@ const useStyles = makeStyles((theme) => ({
     margin: "10px",
     color: "white",
     marginTop: "40px",
+    "@media (max-width: 768px)":{
+      fontSize: "30px"
+    }
   },
   title2: {
     fontFamily: "'Source Code Pro', monospace",
@@ -230,7 +233,7 @@ function MyProjets(props) {
         <Tilt>
         <Card className={classes.root}>
           <div>
-            <h1 className={classes.title2}>SOS APEROBOT</h1>
+            <h1 className={classes.title2}>SOS APÉROBOT</h1>
             <hr className={classes.hr}></hr>
             <p className={classes.cat}>Développement Web</p>
           </div>

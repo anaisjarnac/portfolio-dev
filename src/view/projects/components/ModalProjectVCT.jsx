@@ -19,6 +19,9 @@ const useStyles = makeStyles((theme) => ({
     flex: 1,
     fontSize: "15px",
     color: "white",
+    "@media (max-width: 768px)":{
+      fontSize: "10px"
+    }
   },
   alriq: {
     width: "30%",
@@ -34,6 +37,9 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "auto",
     marginRight: "auto",
     boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px;",
+    "@media (max-width: 768px)":{
+      width:"434px"
+    }
   },
   button: {
     marginLeft: "90px",
@@ -75,14 +81,21 @@ const useStyles = makeStyles((theme) => ({
 
   projetname: {
     fontFamily: "'Source Code Pro', monospace",
+    fontSize: "35px",
     textAlign: "center",
     textShadow: "2px 3px #9EC9BC",
+    "@media (max-width: 768px)":{
+      fontSize: "25px"
+    }
   },
   date: {
     color: "#1A8889",
     fontFamily: "'Source Code Pro', monospace",
     textAlign: "center",
-    marginBottom: "20px"
+    marginBottom: "20px",
+    "@media (max-width: 768px)":{
+      fontSize: "10px"
+    }
   },
   date2: {
     color: "#1A8889",
@@ -91,7 +104,11 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "5%",
     marginBottom: "5%",
     marginLeft: "25%",
-    marginRight: "25%"
+    marginRight: "25%",
+    fontSize: "15px",
+    "@media (max-width: 768px)":{
+      fontSize: "10px"
+    }
   },
   logo: {
     display: "flex",
@@ -111,6 +128,27 @@ const useStyles = makeStyles((theme) => ({
 
     // backgroundColor: "black",
   },
+  js: {
+    "@media (max-width: 768px)":{
+      width: "30px"
+    },
+  },
+  react: {
+    "@media (max-width: 768px)":{
+      width: "30px"
+    }
+  },
+  html: {
+    "@media (max-width: 768px)":{
+      width: "30px"
+    }
+  },
+  html2: {
+    "@media (max-width: 768px)":{
+      width: "30px"
+    }
+  },
+
 }));
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -169,10 +207,10 @@ export default function ModalProjectVCT({ devPro }) {
           <hr className={classes.hr}></hr>
           <div>
           <div className={classes.logo}>
-          <img src="./assets/js.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}} />
-          <img src="./assets/react.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}} />
-          <img src="./assets/node.png" alt="logo" width="80"  height="100%" style={{marginRight: "10px"}} />
-          <img src="./assets/Expressjs.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}} />
+          <img src="./assets/js.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}} className={classes.js}/>
+          <img src="./assets/react.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}} className={classes.react}/>
+          <img src="./assets/node.png" alt="logo" width="80"  height="100%" style={{marginRight: "10px"}} className={classes.html}/>
+          <img src="./assets/Expressjs.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}} className={classes.html2}/>
           </div>
           <div>
           <iframe className={classes.video} width="869" height="422" src="https://www.youtube.com/embed/2pUNrs7moAk?amp;autoplay=1" 

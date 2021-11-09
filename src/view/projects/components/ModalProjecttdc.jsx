@@ -19,6 +19,9 @@ const useStyles = makeStyles((theme) => ({
     flex: 1,
     fontSize: "15px",
     color: "white",
+    "@media (max-width: 768px)":{
+      fontSize: "10px"
+    }
   },
   alriq: {
     width: "30%",
@@ -76,14 +79,21 @@ const useStyles = makeStyles((theme) => ({
 
   projetname: {
     fontFamily: "'Source Code Pro', monospace",
+    fontSize: "35px",
     textAlign: "center",
     textShadow: "2px 3px #9EC9BC",
+    "@media (max-width: 768px)":{
+      fontSize: "25px"
+    }
   },
   date: {
     color: "#1A8889",
     fontFamily: "'Source Code Pro', monospace",
     textAlign: "center",
-    marginBottom: "20px"
+    marginBottom: "20px",
+    "@media (max-width: 768px)":{
+      fontSize: "10px"
+    }
   },
   date2: {
     color: "#1A8889",
@@ -92,7 +102,11 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "5%",
     marginBottom: "5%",
     marginLeft: "25%",
-    marginRight: "25%"
+    marginRight: "25%",
+    fontSize: "15px",
+    "@media (max-width: 768px)":{
+      fontSize: "10px"
+    }
   },
   logo: {
     display: "flex",
@@ -111,6 +125,13 @@ const useStyles = makeStyles((theme) => ({
 
     // backgroundColor: "black",
   },
+
+  js: {
+    "@media (max-width: 768px)":{
+      width: "30px"
+    },
+  },
+
 }));
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -169,7 +190,7 @@ export default function ModalProjectVCT({ devPro }) {
           <hr className={classes.hr}></hr>
           <div>
           <div className={classes.logo}>
-          <img src="./assets/adobe.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}} />
+          <img src="./assets/adobe.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}} className={classes.js} />
           </div>
           <img src="./assets/pack.jpg" alt="" className={classes.alriq} />
           </div>

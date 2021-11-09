@@ -10,6 +10,7 @@ import LocalPhoneIcon from '@material-ui/icons/LocalPhone';
 import EmailIcon from '@material-ui/icons/Email';
 import "./Home.css";
 
+
 const useStyles = makeStyles((theme) => ({
   title: {
     display: 'flex',
@@ -41,6 +42,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     backgroundColor: "9ec9bc",
+    "@media (max-width: 768px)":{
+      marginTop: "10px", 
+    }
   },
   logo: {
     display: "flex",
@@ -98,13 +102,21 @@ const useStyles = makeStyles((theme) => ({
     color: "black",
     fontFamily:"'Source Code Pro', monospace",
     marginBottom: "-15px",
-    fontSize: "20px"
+    fontSize: "20px",
+    "@media (max-width: 768px)":{
+      fontSize: "10px"
+    }
   },
   titlename: {
     fontSize: "60px",
     fontFamily: "'Rubik Mono One', sans-serif",
     marginLeft: "-150px",
-    textShadow: "5px 5px #FE8B46"
+    textShadow: "5px 5px #FE8B46",
+    display: "flex",
+    flexWrap: "wrap",
+    "@media (max-width: 768px)":{
+      fontSize: "30px"
+    }
   },
   def: {
     textAlign: "center",
@@ -112,16 +124,25 @@ const useStyles = makeStyles((theme) => ({
     color: "black",
     fontFamily:"'Source Code Pro', monospace",
     textShadow: "2px 3px #9EC9BC",
-    marginBottom: "-15px"
+    marginBottom: "-15px",
+    "@media (max-width: 768px)":{
+      fontSize: "15px"
+    }
   },
   stacks: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center"
   },
+  js: {
+    "@media (max-width: 768px)":{
+      width: "35px"
+    },
+  },
   container: {
     marginTop: "50px",
     marginRight: "150px"
+  
   },
   tof: {
     display: "flex",
@@ -130,6 +151,7 @@ const useStyles = makeStyles((theme) => ({
   matete:{
     marginRight: "-150px",
     marginTop: "80px",
+
   
     // "&:hover": {
     //   opacity: 0.5,
@@ -158,7 +180,7 @@ const useStyles = makeStyles((theme) => ({
     //   opacity: 0.5,
  
     // },
-  }
+  },
 }));
 
 function Home(props) {
@@ -174,24 +196,24 @@ function Home(props) {
         <div className={classes.tof}>
         <div className={classes.container}>
         <div className={classes.stacks}>
-          <img src="./assets/js.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}} id="cat-img-2"/>
-          <img src="./assets/react.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}} id="cat-img-2"/>
-          <img src="./assets/node.png" alt="logo" width="80"  height="100%" style={{marginRight: "10px"}} id="cat-img-2"/>
-          <img src="./assets/Expressjs.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}} id="cat-img-2"/>
+          <img src="./assets/js.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}} id="cat-img-2" className={classes.js}/>
+          <img src="./assets/react.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}} id="cat-img-2"className={classes.js}/>
+          <img src="./assets/node.png" alt="logo" width="80"  height="100%" style={{marginRight: "10px"}} id="cat-img-2"className={classes.js}/>
+          <img src="./assets/Expressjs.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}} id="cat-img-2"className={classes.js}/>
           </div>
           <br />
           <div className={classes.stacks}>
-          <img src="./assets/image-3.png" alt="logo" width="70" height="100%" style={{marginRight: "10px"}} id="cat-img-2"/>
-          <img src="./assets/next.png" alt="logo" width="60" height="100%" style={{marginRight: "10px"}} id="cat-img-2"/>
-          <img src="./assets/adobe.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}} id="cat-img-2"/>
-          <img src="./assets/typescript.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}} id="cat-img-2"/>
+          <img src="./assets/image-3.png" alt="logo" width="70" height="100%" style={{marginRight: "10px"}} id="cat-img-2"className={classes.js}/>
+          <img src="./assets/next.png" alt="logo" width="60" height="100%" style={{marginRight: "10px"}} id="cat-img-2"className={classes.js}/>
+          <img src="./assets/adobe.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}} id="cat-img-2"className={classes.js}/>
+          <img src="./assets/typescript.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}} id="cat-img-2"className={classes.js}/>
           </div>
           <br />
           <div className={classes.stacks}>
-          <img src="./assets/native.png" alt="logo" width="70" height="100%" style={{marginRight: "10px"}}id="cat-img-2"/>
-          <img src="./assets/graphql.png" alt="logo" width="60" height="100%" style={{marginRight: "10px"}}id="cat-img-2"/>
-          <img src="./assets/github.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}}id="cat-img-2"/>
-          <img src="./assets/scrum.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}}id="cat-img-2"/>
+          <img src="./assets/native.png" alt="logo" width="70" height="100%" style={{marginRight: "10px"}}id="cat-img-2"className={classes.js}/>
+          <img src="./assets/graphql.png" alt="logo" width="60" height="100%" style={{marginRight: "10px"}}id="cat-img-2"className={classes.js}/>
+          <img src="./assets/github.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}}id="cat-img-2"className={classes.js}/>
+          <img src="./assets/scrum.png" alt="logo" width="50" height="100%" style={{marginRight: "10px"}}id="cat-img-2"className={classes.js}/>
       </div>
       </div>
       <div className={classes.matete}>

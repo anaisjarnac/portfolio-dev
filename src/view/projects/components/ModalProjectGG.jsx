@@ -19,6 +19,9 @@ const useStyles = makeStyles((theme) => ({
     flex: 1,
     fontSize: "15px",
     color: "white",
+    "@media (max-width: 768px)":{
+      fontSize: "10px"
+    }
   },
   alriq: {
     width: "30%",
@@ -34,6 +37,9 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "auto",
     marginRight: "auto",
     boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px;",
+    "@media (max-width: 768px)":{
+      width:"434px"
+    }
   },
   button: {
     marginLeft: "90px",
@@ -75,14 +81,21 @@ const useStyles = makeStyles((theme) => ({
 
   projetname: {
     fontFamily: "'Source Code Pro', monospace",
+    fontSize: "35px",
     textAlign: "center",
     textShadow: "2px 3px #9EC9BC",
+    "@media (max-width: 768px)":{
+      fontSize: "20px"
+    },
   },
   date: {
     color: "#1A8889",
     fontFamily: "'Source Code Pro', monospace",
     textAlign: "center",
-    marginBottom: "20px"
+    marginBottom: "20px",
+    "@media (max-width: 768px)":{
+      fontSize: "10px"
+    }
   },
   date2: {
     color: "#1A8889",
@@ -91,7 +104,11 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "5%",
     marginBottom: "5%",
     marginLeft: "25%",
-    marginRight: "25%"
+    marginRight: "25%",
+    fontSize: "15px",
+    "@media (max-width: 768px)":{
+      fontSize: "10px"
+    }
   },
   logo: {
     display: "flex",
@@ -110,6 +127,27 @@ const useStyles = makeStyles((theme) => ({
     // backgroundRepeat: "no-repeat"
 
     // backgroundColor: "black",
+  },
+
+  js: {
+    "@media (max-width: 768px)":{
+      width: "30px"
+    },
+  },
+  react: {
+    "@media (max-width: 768px)":{
+      width: "30px"
+    }
+  },
+  html: {
+    "@media (max-width: 768px)":{
+      width: "30px"
+    }
+  },
+  html2: {
+    "@media (max-width: 768px)":{
+      width: "30px"
+    }
   },
 }));
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -169,12 +207,12 @@ export default function ModalProjectVCT({ devPro }) {
           <hr className={classes.hr}></hr>
           <div>
           <div className={classes.logo}>
-          <img src="./assets/js.png" alt="logo" width="40" height="100%" style={{marginRight: "10px"}} />
-          <img src="./assets/html.png" alt="logo" width="40" height="100%" style={{marginRight: "10px"}} />
-          <img src="./assets/html-2.png" alt="logo" width="40" height="100%" style={{marginRight: "10px"}} />
-          <img src="./assets/github.png" alt="logo" width="40"  height="100%" style={{marginRight: "10px"}} />
+          <img src="./assets/js.png" alt="logo" width="40" height="100%" style={{marginRight: "10px"}} className={classes.js}/>
+          <img src="./assets/html.png" alt="logo" width="40" height="100%" style={{marginRight: "10px"}} className={classes.react}/>
+          <img src="./assets/html-2.png" alt="logo" width="40" height="100%" style={{marginRight: "10px"}} className={classes.html}/>
+          <img src="./assets/github.png" alt="logo" width="40"  height="100%" style={{marginRight: "10px"}} className={classes.html2}/>
           </div>
-          <iframe width="869" height="456" src="https://www.youtube.com/embed/3JS-q55xBUY?amp;autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe  className={classes.video} width="869" height="456" src="https://www.youtube.com/embed/3JS-q55xBUY?amp;autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
           <p className={classes.date2}>
