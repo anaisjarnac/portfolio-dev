@@ -26,7 +26,6 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-
   },
   homesweet: {
     backgroundImage: "url('/assets/template-2-2.png')" ,
@@ -151,6 +150,9 @@ const useStyles = makeStyles((theme) => ({
   matete:{
     marginRight: "-150px",
     marginTop: "80px",
+    "@media (max-width: 768px)":{
+      display: "none"
+    }
 
   
     // "&:hover": {
