@@ -193,7 +193,7 @@ function Home(props) {
       <div>
       <h2 className={classes.name}>Salut ! Moi, c'est</h2>
       <h1 className={classes.titlename} id="cat-img-1">Anaïs Jarnac</h1>
-        <h2 className={classes.def}>DÉVELOPPEUSE JAVASCRIPT JUNIOR</h2>
+        <h2 className={classes.def}>DÉVELOPPEUSE WEB FULLSTACK JUNIOR</h2>
         </div>
         <div className={classes.tof}>
         <div className={classes.container}>
