@@ -23,9 +23,9 @@ const useStyles = makeStyles((theme) => ({
   },
   home: {
     display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
     justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
   },
   homesweet: {
     backgroundImage: "url('/assets/fonfonn.png')" ,
@@ -34,6 +34,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
   },
   button: {
     marginTop: "20px", 
