@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
   homesweet: {
-    backgroundImage: "url('/assets/template-2-2.png')" ,
+    backgroundImage: "url('/assets/fonfonn.png')" ,
     width: "100%",
     height: "100vh",
     backgroundRepeat: "no-repeat",
@@ -51,18 +51,18 @@ const useStyles = makeStyles((theme) => ({
   },
   logo1: {
     margin: "10px",
-    color: "#FE8B46",
+    color: "#EA8C74",
     marginBottom: "80px",
   },
   logo2: {
     margin: "10px",
-    color: "#9BC7BA",
+    color: "#EA8C74",
     marginBottom: "80px",
 
   },
   logo6: {
     margin: "10px",
-    color: "#9BC7BA",
+    color: "#EA8C74",
     marginBottom: "80px",
 
   },
@@ -74,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
   },
   logo5: {
     margin: "10px",
-    color: "#FE8B46",
+    color: "#5090D1",
     marginBottom: "80px",
 
   },
@@ -87,12 +87,12 @@ const useStyles = makeStyles((theme) => ({
   buttons: {
     textDecoration: "none",
     color:"black",
-    backgroundColor: "#9ec9bc",
+    backgroundColor: "#3FB77B",
     border: "none",
     borderRadius: "10px",
     fontFamily:"'Source Code Pro', monospace",
     "&:hover": {
-      backgroundColor: "#E1D05C",
+      backgroundColor: "#EA8C74",
     },
  
   },
@@ -153,35 +153,6 @@ const useStyles = makeStyles((theme) => ({
     "@media (max-width: 768px)":{
       display: "none"
     }
-
-  
-    // "&:hover": {
-    //   opacity: 0.5,
-    //   transition: "all 0.3s",
-    // },
-  },
-  
-  // txtsurmatete: {
-  // position: "absolute",
-  // top: "50%",
-  // left: "50%",
-  // transform: "translate(-50%, -50%)",
-  // opacity: 0,
-  // fontSize:"15px",
-  // color: "white",
-  // "&:hover": {
-  //   opacity: 1,
-  //   zIndex:7
-  // },
-  // },
-
-  photo2moa: {
-    // border: "1px solid",
-    // boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
-    // "&:hover": {
-    //   opacity: 0.5,
- 
-    // },
   },
 }));
 
@@ -219,7 +190,7 @@ function Home(props) {
       </div>
       </div>
       <div className={classes.matete}>
-      <img src="./assets/projet-10.png" alt="logo" width="220" className={classes.photo2moa} id="cat-img-3"/>
+      <img src="./assets/photoprofil.png" alt="logo" width="220" className={classes.photo2moa} id="cat-img-3"/>
       {/* <p className={classes.txtsurmatete}>07.66.32.80.08 <br/> ajarnac@gmail.com</p> */}
       </div>
       </div>

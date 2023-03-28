@@ -8,16 +8,17 @@ import ModalProjectTOCTOC from "./components/ModalProjectTOCTOC";
 import ModalProjectSOS from "./components/ModalProjectSOS";
 import ModalProjectGG from "./components/ModalProjectGG";
 import ModalProjecttdc from "./components/ModalProjecttdc";
+import ModalProjectCompito from "./components/ModalProjectCompito";
 import "./MyProjects.css";
+import ModalProjectOctopia from "./components/ModalProjectOctopia";
 // import Tilt from 'react-parallax-tilt';
 
 const useStyles = makeStyles((theme) => ({
   shake: {
     maxWidth: 400,
     height: 430,
-    boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px", 
-    },
-
+    boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
+  },
 
   media: {
     height: 0,
@@ -40,9 +41,9 @@ const useStyles = makeStyles((theme) => ({
     margin: "10px",
     color: "white",
     marginTop: "40px",
-    "@media (max-width: 768px)":{
-      fontSize: "30px"
-    }
+    "@media (max-width: 768px)": {
+      fontSize: "30px",
+    },
   },
   title2: {
     fontFamily: "'Source Code Pro', monospace",
@@ -93,20 +94,20 @@ const useStyles = makeStyles((theme) => ({
   },
   grid: {
     marginTop: "50px",
-  //   display: "grid",
-  //   gridTemplateColumns: "300px 300px 300px",
-  //   gridTemplateRows: "400px 400px",
-  //   gridGap: "60px",
-  //   justifyContent: "center",
-  maxWidth: "1000px",
-  width: "80%",
-  height: "auto",
-  margin: "30px auto",
-  display: "grid",
-  gridTemplateColumns: "repeat(auto-fill, 300px)",
-  justifyContent: "center",
-  gridGap: "40px",
-  marginBottom: "80px" 
+    //   display: "grid",
+    //   gridTemplateColumns: "300px 300px 300px",
+    //   gridTemplateRows: "400px 400px",
+    //   gridGap: "60px",
+    //   justifyContent: "center",
+    maxWidth: "1000px",
+    width: "80%",
+    height: "auto",
+    margin: "30px auto",
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fill, 300px)",
+    justifyContent: "center",
+    gridGap: "40px",
+    marginBottom: "80px",
   },
 
   back: {
@@ -126,7 +127,6 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       backgroundColor: "#B79819",
       color: "white",
-      
     },
   },
   button2: {
@@ -173,7 +173,45 @@ function MyProjets(props) {
         Développement Web {showAll ? "" : "& DESIGN"}
       </Button> */}
       <div className={classes.grid}>
-      {/* <Tilt> */}
+        {/* <Tilt> */}
+        <Card className={classes.shake} id="shake">
+          <div>
+            <h1 className={classes.title2}>COMPITO</h1>
+            <hr className={classes.hr}></hr>
+            <p className={classes.cat}>Développement Web</p>
+          </div>
+          <p className={classes.cat2}>
+            Site et application mobile de gestion de projet
+          </p>
+          <div>
+            <img
+              src="./assets/compito.png"
+              alt="bike"
+              className={classes.avatar}
+              width="100px"
+              style={{ marginLeft: "33%", marginTop: "25px" }}
+            />
+          </div>
+          <ModalProjectCompito className={classes.modal} />
+        </Card>
+        <Card className={classes.shake} id="shake">
+          <div>
+            <h1 className={classes.title2}>OCTOPIA</h1>
+            <hr className={classes.hr}></hr>
+            <p className={classes.cat}>Développement Web</p>
+          </div>
+          <p className={classes.cat2}>Solution de Market-Place</p>
+          <div>
+            <img
+              src="./assets/octo.png"
+              alt="octopia"
+              className={classes.avatar}
+              width="160px"
+              style={{ marginLeft: "25%", marginTop: "25px" }}
+            />
+          </div>
+          <ModalProjectOctopia className={classes.modal} />
+        </Card>
         <Card className={classes.shake} id="shake">
           <div>
             <h1 className={classes.title2}>CARGO BIKE TRADE</h1>
@@ -290,7 +328,6 @@ function MyProjets(props) {
         <br />
         <br />
         <br />
-
         {/* 
         {projet
           .filter(
